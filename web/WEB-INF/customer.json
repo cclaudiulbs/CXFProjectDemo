@@ -1,0 +1,20 @@
+{
+    "customers": [
+        {
+            "id": "1",
+            "customerDescription": {
+                "first_name": "cclaudiu",
+                "job": "java_developer",
+                "age": "31"
+            }
+        },
+        {
+            "id": "2",
+            "customerDescription": {
+                "first_name": "marius",
+                "job": "java_developer",
+                "age": "3"
+            }
+        }
+    ]
+}

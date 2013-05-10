@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="apache-cxf-webapp">
+    <output-path>$PROJECT_DIR$/out/artifacts/apache_cxf_webapp</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="project_dependencies" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="CXFProjectDemo/web/Web" />
+    </root>
+  </artifact>
+</component>

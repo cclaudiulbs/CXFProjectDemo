@@ -1,0 +1,11 @@
+all
+artifact.apache-cxf-webapp
+build.all.artifacts
+build.modules
+clean
+clean.artifact.apache-cxf-webapp
+clean.module.cxfprojectdemo
+compile.module.cxfprojectdemo
+compile.module.cxfprojectdemo.production
+compile.module.cxfprojectdemo.tests
+init
