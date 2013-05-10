@@ -20,7 +20,7 @@
     <target name="copydeps" depends="compile" description="">
         <copy todir="build/classes">
             <fileset dir="src"
-                     includes="**/*.xml,**/*.properties,**/*.txt,**/*.ico" />
+                     includes="**/*.xml,**/*.properties,**/*.json" />
         </copy>
     </target>
 
