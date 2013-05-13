@@ -1,17 +1,20 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="apache-cxf-webapp">
+  <artifact type="exploded-war" build-on-make="true" name="apache-cxf-webapp">
     <output-path>$PROJECT_DIR$/out/artifacts/apache_cxf_webapp</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="web/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="web" />
+          <element id="module-output" name="CXFProjectDemo" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="project_dependencies" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="CXFProjectDemo/web/Web" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/META-INF/context.xml" output-file-name="context.xml" />
+      </element>
+      <element id="javaee-facet-resources" facet="CXFProjectDemo/web/Web2" />
     </root>
   </artifact>
 </component>

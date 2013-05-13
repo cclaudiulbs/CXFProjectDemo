@@ -29,6 +29,7 @@
             <fileset dir="web"/>
             <lib dir="web/WEB-INF/lib"/>
             <classes dir="build/classes"/>
+            <fileset dir="src/com/cxf/demo/resource" />
         </war>
     </target>
 

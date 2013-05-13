@@ -1,10 +1,13 @@
 package com.cxf.demo.service;
 
 import com.cxf.demo.exception.MarshallerException;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * @author cclaudiu
@@ -32,4 +35,17 @@ public class CustomMarshaller<T extends Object> {
             throw new MarshallerException(e.getMessage(), e);
         }
     }
+
+    public void marshall(OutputStream outputStream, T value) {
+        try {
+            mapper.writeValue(outputStream, value);
+        } catch (JsonMappingException e) {
+            throw new MarshallerException(e.getMessage(), e);
+        } catch (JsonGenerationException e) {
+            throw new MarshallerException(e.getMessage(), e);
+        } catch (IOException e) {
+            throw new MarshallerException(e.getMessage(), e);
+        }
+    }
+
 }
